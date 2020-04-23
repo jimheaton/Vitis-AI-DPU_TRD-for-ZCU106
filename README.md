@@ -61,22 +61,13 @@ The .img file will be created for which you can use a program like etcher to pro
 
 You are now ready to boot the ZCU106 from the SD Card.
 
-## Step 4 Install Vitis AI Package
-Install the Vitis AI Package, see page 26 UG1414 (v1.1) for instructions.
-
-After the package is installed you can run from a terminal:
-
- ```dexplorer -w ``` 
- 
- You should see the following:
-
-![](img/dexplorer.png)
-
+## Step 4 Install Vitis AI Run Time Libary
+Follow the Instructionas at: https://github.com/Xilinx/Vitis-AI/tree/v1.1/VART
 
 ## Step 5 Install Vitis AI Libraries
 Follow the instructions at: https://github.com/Xilinx/Vitis-AI/tree/v1.1/Vitis-AI-Library
 * Install ZCU104 Models. 
-* Install Vitis-AI LIbrary 1.0
+* Install Vitis-AI LIbrary 1.1
 * Install demo vido files
 * Install demo image file
 
