@@ -73,3 +73,5 @@ Follow the instructions at: https://github.com/Xilinx/Vitis-AI/tree/v1.0/Vitis-A
 * Install demo vido files
 * Install demo image file
 
+
+
