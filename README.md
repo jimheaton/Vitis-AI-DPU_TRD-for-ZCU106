@@ -1,6 +1,6 @@
 # Vitis-AI-DPU-TRD-for-ZCU16
 Port of the DPU_TRD from the ZCU104 to ZCU106 Board with Vitis-AI Libray Support.
-This has been tested on the Vitis-AI 1.0 relases of the tools, and Vitis 2019.2
+This has been tested on the Vitis-AI 1.1 relases of the tools, and Vitis 2019.2
 
 ## Step 1: Build ZCU106 Vitis Platform
 The Vitis zcu106_dpu platform is based off the zcu104_dpu platform.
@@ -47,29 +47,27 @@ make KERNEL=DPU DEVICE=zcu106
 When the build completes the sd card files will be loacted at: DPU_TRD/prj/Vits/binary_contrainer_1/sd_card/
 
 ## Step 3 Prepare SD Card 
-You will need to format the SD Card with 2 Partitions. This will be easiest to do from a Linux Machine:
-* FAT32 Parition Can be 256MB. Copy boot the BOOT.BIN and image.ub here
-* ETX4 for the rest. Copy rootfs.tar.gz here and uncompress
+Run the following flash utility to create an .img file:
 
-Now you can boot the ZCU106 from the SD Card.
+~~~bash
+cp flash_sd_card.sh DPU-TRD/prj/Vitis/binary_container_1/sd_card/
+cd DPU-TRD/prj/Vitis/binary_container_1/sd_card/
+sudo bash flash_sd_card.sh
+~~~
 
+You select n when asked if you want to Flash the SD card.
 
-## Step 4 Install Vitis AI Package
-Install the Vitis AI Package, see page 26 UG1414 (v1.0) for instructions.
+The .img file will be created for which you can use a program like etcher to progam the SD Card (See UG1414 for more details)
 
-After the package is installed you can run from a terminal:
+You are now ready to boot the ZCU106 from the SD Card.
 
- ```dexplorer -w ``` 
- 
- You should see the following:
-
-![](img/dexplorer.png)
-
+## Step 4 Install Vitis AI Run Time Libary
+Follow the Instructionas at: https://github.com/Xilinx/Vitis-AI/tree/v1.1/VART
 
 ## Step 5 Install Vitis AI Libraries
-Follow the instructions at: https://github.com/Xilinx/Vitis-AI/tree/v1.0/Vitis-AI-Library
+Follow the instructions at: https://github.com/Xilinx/Vitis-AI/tree/v1.1/Vitis-AI-Library
 * Install ZCU104 Models. 
-* Install Vitis-AI LIbrary 1.0
+* Install Vitis-AI LIbrary 1.1
 * Install demo vido files
 * Install demo image file
 
