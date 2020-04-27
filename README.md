@@ -24,10 +24,10 @@ When the build is complete the xpm file will be located at:
 ```zcu106_dpu/platform_repo/zcu106_dpu/export/zcu106_dpu/zcu106_dpu.xpfm```
 
 ## Step 2 Download DPU_TRD 
-We will configure DPU_TRD to the same dpu config as the zcu104 version. It is has been tesetd of the 1.0 Release of Vitis-AI.
+We will configure DPU_TRD to the same dpu config as the zcu104 version. It is has been tesetd of the 1.1 Release of Vitis-AI.
 
 To build:
-1. Clone the Vitis 1.0 Tag of the Vitis-AI Tools and go the  DPU_TRD directory
+1. Clone the Vitis 1.1 Tag of the Vitis-AI Tools and go the  DPU_TRD directory
 
 2.  Make the following edits to the makeFile in DPU/TRD/prj/makeFile
 * Edit the SDX_PLATFORM line to point the zcu106_dpu.xpm file loaction in
