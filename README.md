@@ -1,4 +1,4 @@
-# Vitis-AI-DPU-TRD-for-ZCU16
+# Vitis-AI-DPU-TRD-for-ZCU106
 Port of the DPU_TRD from the ZCU104 to ZCU106 Board with Vitis-AI Libray Support.
 This has been tested on the Vitis-AI 1.1 relases of the tools, and Vitis 2019.2
 
